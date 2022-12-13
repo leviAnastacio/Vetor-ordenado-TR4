@@ -16,7 +16,7 @@ int myCOMP(void* x, void* y){
 	}
 }
 
-//Função de imprimir os elementos-teste do vetor
+//Função de imprimir os elementos-teste do vetor.
 void print(void** vet, int P){
 	int i;
 	printf("VETOR DE %d TAMANHO:\n", P);
