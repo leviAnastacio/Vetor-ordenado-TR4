@@ -7,9 +7,9 @@
 /*Definicao do tipo de funcao a ser utilizado para comparacao
 Esta funÃ§Ã£o recebe dois valores x e y e retorna
 
-1 : se x Ã© menor que y.
-0 : se x Ã© equivalente a y.
--1: se x Ã© maior que y na ordem.
+1 : se x é menor que y.
+0 : se x é equivalente a y.
+-1: se x é maior que y na ordem.
 
 */
 typedef int COMP(void* x, void* y);
@@ -34,11 +34,11 @@ Cria um vetor ordernado vazio de tamanho n e com funcao de comparacao compara
 VETORORD* VETORD_create(int n, COMP* compara);
 
 /**
-Adiciona o elemento newelem ao vetor ordenado, na posicao correta se for possÃ­vel
+Adiciona o elemento newelem ao vetor ordenado, na posicao correta se for possível
 ainda incluir o elemento (se existe espaco no vetor). O vetor deve estar ordenado em
-ordem crescente, ou seja: x[i] Ã© menor que ou equivalente a x[j] para todo i < j.
+ordem crescente, ou seja: x[i] é menor que ou equivalente a x[j] para todo i < j.
 
-@param vetor: o vetor ordenado a ter o elemento incluÃ­do
+@param vetor: o vetor ordenado a ter o elemento incluído
 @param newelem: o elemento a ser adicionado
 */
 void VETORD_add(VETORORD* vetor, void* newelem);
