@@ -2,36 +2,35 @@
 #include <stdlib.h>
 #include "ordvetor.h"
 
-//Função de comparação
+//Função de comparação para os elementos desejados no teste
 int myCOMP(void* x, void* y){
 	int ptx = *((int*)x);
 	int pty = *((int*)y);
 	if(ptx - pty < 5){
 		return -1;
 	}else{
-		if(ptx - pty > 5) return 1;
-		else return 0;
+		if(ptx - pty > 5) 
+			return 1;
+		else 
+			return 0;
 	}
 }
 
-//Print para a estrutura
+//Função de imprimir os elementos do vetor
 void print(void** vet, int P){
-	int i;
 	printf("VETOR DE %d TAMANHO:\n", P);
-	for(i = 0; i < P; i++){
+	for(int i = 0; i < P; i++){
 		printf(" %d ", *((int*)vet[i]));
 	}
 	printf("\n");
 }
 
 int main(){
-   	VETORORD* vet = VETORD_create(10, myCOMP);
-   	
+   	VETORORD* vet = VETORD_create(10, myCOMP);//cria um vetor de 10 posições com base na função de comparação para testes.
    	int* x;
-   	int i;
    	
    	printf("INCLUINDO... \n");
-	for(i = 0; i < 10; i++){
+	for(int i = 0; i < 10; i++){
 		x = malloc(sizeof(int));
 		*x = i*10;
 		VETORD_add(vet, x);
