@@ -2,7 +2,8 @@
 
 ## *Descrição*
   Trabalho avaliativo que compõe parte da nota final da disciplina Laboratório de programação.
-  O código em si, consiste no desenvolvimento de um vetor que recebe e organiza valores de forma 
+  O código em si, é contruído totalmente em linguagem C e consiste no desenvolvimento de um vetor 
+  que recebe e organiza valores de forma 
   ordenada em suas posições. O usuário, por meio de funções específicas na codificação, pode criar 
   o vetor, adicionar elementos em suas posições e, ademais, remover elementos por ele desejados. A
   codificação, conta, ainda, com uma função de comparação que depende exclusivamente de um arquivo
