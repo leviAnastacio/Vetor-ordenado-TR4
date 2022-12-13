@@ -33,15 +33,15 @@ int main(){
 	for(int i = 0; i < 10; i++){
 		x = malloc(sizeof(int));
 		*x = i*10;
-		VETORD_add(vet, x);
+		VETORD_add(vet, x);//inclusão dos elementos gerados no vetor.
 	}
 	
-	print(vet->elems, vet->P);
+	print(vet->elems, vet->P);//imprime os elementos adicionados.
   
   	printf("REMOVENDO!");
-  	VETORD_remove(vet);
+  	VETORD_remove(vet);//remoção do primeiro elemento do vetor.
   	
-	print(vet->elems, vet->P);
+	print(vet->elems, vet->P);//imprime o vetor após a exclusão do primeiro elemento.
    
 	return 0;  
 }
