@@ -29,8 +29,7 @@ Cria um vetor ordernado vazio de tamanho n e com funcao de comparacao compara
 @param n: o tamanho do vetor
 @param compara: a funcao de comparacao
 
-@return um ponteiro para uma estrutura VETORORD, observe que este ponteiro ja
-deve apontar para a estrutura, ou seja, a alocacao de memoria deve ser feita nele.
+@return um ponteiro para uma estrutura VETORORD.
 */
 VETORORD* VETORD_create(int n, COMP* compara);
 
