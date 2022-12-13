@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "ordvetor.h"
 
-//Função de criação e inicializacao do vetor
+//Função de criação e inicializacao do vetor.
 VETORORD* VETORD_create(int n, COMP* compara)
 {
 	VETORORD *p = (VETORORD*)malloc(sizeof(VETORORD));//alocacao de memoria de um ponteiro de tipo definido VETORORD
@@ -11,7 +11,7 @@ VETORORD* VETORD_create(int n, COMP* compara)
 		fprintf(stderr, "Não foi possível alocar memória.\n");
 		exit(EXIT_FAILURE);
 	}
-	//... os valores contidos no vetor serao inicializados com os parametros iniciais
+	//... os valores contidos no vetor serão inicializados com os parâmetros iniciais
 	p -> N = n;
 	p -> P = 0;
 	p -> comparador = compara;//ponteiro apontando para o valor desejado
@@ -27,7 +27,7 @@ VETORORD* VETORD_create(int n, COMP* compara)
 	return p;//retorna o ponteiro com o endereco do vetor criado e inicializado
 }
 
-//Função de adição de elementos no vetor
+//Função de adição de elementos no vetor.
 void VETORD_add(VETORORD* vetor, void* newelem)
 {
 	
