@@ -23,7 +23,8 @@
   gcc TR4_538536.c main_vet.c -o vetorOrd
   ```
   ***3.Como executar o programa:***
-    Logo após ter digitado o último comando, ainda no terminal, digite o próximo comando:  
+    Logo após ter digitado os últimos comandos, ainda no terminal, digite o próximo comando:  
     ```
+    cd Vetor-ordenado-TR4
     ./vetorOrd     
     ```
