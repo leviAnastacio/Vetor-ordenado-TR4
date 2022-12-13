@@ -31,6 +31,5 @@
   ***3.Como executar o programa:***
     Logo após ter digitado os últimos comandos, ainda no terminal, digite o próximo comando:  
     ```
-    cd Vetor-ordenado-TR4
     ./vetorOrd     
     ```
